@@ -11,8 +11,6 @@ if (!file_exists('AES.php')) {
 }
 require_once __DIR__.'/AES.php';
 $xm = new AES('aes',128);
-//$xm->;
-
 $enc = $xm->encrypt('data','password');
 
 echo $enc;
@@ -28,8 +26,6 @@ if (!file_exists('AES.php')) {
 }
 require_once __DIR__.'/AES.php';
 $xm = new AES();
-//$xm->;
-
 $enc = $xm->encrypt('data','password');
 
 echo $enc;
