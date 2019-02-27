@@ -1,7 +1,7 @@
 Encrypt data with aes 128 and 256 byte
 And decrypt it in Codeigniter
 
-##Example :
+## Example :
 
 ```
 <?php
@@ -17,7 +17,7 @@ echo $enc;
 echo $xm->Decrypt($enc,'password');
 ?>
 ```
-##For AES 256
+## For AES 256
 ```
 <?php
 define('BASEPATH',__DIR__);
