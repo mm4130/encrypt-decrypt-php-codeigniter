@@ -19,3 +19,20 @@ echo $enc;
 echo $xm->Decrypt($enc,'password');
 ?>
 ```
+##For AES 256
+```
+<?php
+define('BASEPATH',__DIR__);
+if (!file_exists('AES.php')) {
+    copy('https://raw.githubusercontent.com/mm4130/encrypt-decrypt-php-codeigniter/master/AES.php', 'AES.php');
+}
+require_once __DIR__.'/AES.php';
+$xm = new AES();
+//$xm->;
+
+$enc = $xm->encrypt('data','password');
+
+echo $enc;
+echo $xm->Decrypt($enc,'password');
+?>
+```
